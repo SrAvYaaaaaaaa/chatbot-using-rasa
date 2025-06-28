@@ -1,0 +1,64 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - bot_challenge
+  - user_question
+  - insights
+  - insights_ans
+  - services
+  - services_ans
+  - solutions
+  - sol_ans
+
+entities:
+  - topic
+
+slots:
+  content:
+    type: text
+    mappings:
+      - type: custom
+
+
+responses:
+  utter_greet:
+  - text: "Hey! What would you like to know about? 1.Insights 2.Services 3.Solutions"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_ask_topic:
+  - text: "Do you have any more questions regarding this topic?"
+
+  utter_que1:
+  - text: "what field would you like to know more about?\n 1.Banking\t 2.Government\t 3.Health\t 4.Manufacturing\t 5.Retail\t 6.Energy & utilities"
+
+  utter_que2:
+  - text: "what field would you like to know more about?\n 1.Business consulting\t 2.Business process services\t 3.Managed IT services\t 4.Artificial intelligence\t 5.Advanced analytics\t 6.Cloud & IT modernization"
+
+  utter_que3:
+  - text: "what field would you like to know more about?\n 1.CGI Credit Studio\t 2.CGI PulseAI\t 3.CGI Trade360\t 4.CGI OpenGrid360\t 5.CGI All Payments\t 6.CGI Retail Suite"
+
+  utter_what_else:
+  - text: "Please let me know if there is anything more I can assist you with"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+- action_say_answer
+- action_summarize_text
