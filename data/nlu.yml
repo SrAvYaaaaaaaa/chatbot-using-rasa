@@ -1,0 +1,131 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: user_question
+  examples: |
+    - [world war 3](topic)
+    - [data analytics](topic)
+    - [migrating](topic)
+    - when was [Bhopal gas tragedy](topic)
+    - what is [COVID-19](topic)
+    - what is [artificial intelligence](topic)
+    - what is [management](topic)
+    - what is [bhopal gas tragedy](topic)
+    - how many [countries are there](topic)
+    - what are [the steps to learn AI](topic)
+    - how to [learn data analytics](topic)
+    - what is [CGI Trade360](topic)
+    - how many [employees are there in CGI](topic)
+    - who is [the president of CAPITALS](topic)
+    - what happened [in the international conference 2024](topic)
+    - how to [use the feature CGI Trade360](topic)
+
+- intent: insights
+  examples: |
+    - Insights
+    - insights
+    - insight
+    - Insight
+
+- intent: insights_ans
+  examples: |
+    - 1.Banking
+    - Government
+    - Health
+    - Manufacturing
+    - Retail
+    - Energy & utilities
+
+- intent: services
+  examples: |
+    - Services
+    - services
+    - Service
+    - service
+
+- intent: services_ans
+  examples: |
+    - Business consulting
+    - Business process services
+    - Managed IT services
+    - Artificial intelligence
+    - Advanced analytics
+    - Cloud & IT modernization
+
+- intent: solutions
+  examples: |
+    - solutions
+    - Solutions
+    - solution
+    - Solution
+    - soln
+    - solns
+    - Solns
+    - Soln
+    - sol
+    - Sol
+
+- intent: sol_ans
+  examples: |
+    - CGI Credit Studio
+    - CGI PulseAI
+    - CGI Trade360
+    - CGI OpenGrid360
+    - CGI All Payments
+    - CGI Retail Suite

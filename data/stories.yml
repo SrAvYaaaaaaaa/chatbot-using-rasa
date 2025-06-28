@@ -1,0 +1,51 @@
+version: "3.1"
+
+stories:
+
+- story: insights story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: insights
+  - action: utter_que1
+  - intent: insights_ans
+  - action: action_summarize_text
+  - slot_was_set:
+    - content: "a long line of blah blah blah. Blah blah blah blah."
+  - action: utter_ask_topic
+  - intent: user_question
+  - action: action_say_answer
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: services story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: services
+  - action: utter_que2
+  - intent: services_ans
+  - action: action_summarize_text
+  - slot_was_set:
+    - content: "a long line of blah blah blah. Blah blah blah blah."
+  - action: utter_ask_topic
+  - intent: user_question
+  - action: action_say_answer
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: solutions story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: solutions
+  - action: utter_que3
+  - intent: sol_ans
+  - action: action_summarize_text
+  - slot_was_set:
+    - content: "a long line of blah blah blah. Blah blah blah blah."
+  - action: utter_ask_topic
+  - intent: user_question
+  - action: action_say_answer
+  - intent: goodbye
+  - action: utter_goodbye
